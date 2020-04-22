@@ -5,5 +5,5 @@ const divisionOperation = (param1, param2) => (+param1) / (+param2);
 
 module.exports.sum = sumOperation;
 module.exports.substract = substractOperation;
-module.exports.multiplication = multiplicationOperation;
-module.exports.division = divisionOperation;
+module.exports.multiply = multiplicationOperation;
+module.exports.divide = divisionOperation;

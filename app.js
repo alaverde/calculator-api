@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const sumRoute = require('./routes/sum.route');
 const subtractionRoute = require('./routes/subtraction.route');
+const multiplicationRoute = require('./routes/multiplication.route');
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api/calculator', sumRoute);
 app.use('/api/calculator', subtractionRoute);
+app.use('/api/calculator', multiplicationRoute);
 
 app.use((error, req, res, next) => {
     const status = error.statusCode || 500;
